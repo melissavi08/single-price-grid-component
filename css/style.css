@@ -1,0 +1,37 @@
+:root {
+  /* colors */
+  --clr-primary-hsl-300: 179, 62%, 43%;
+  --cl-primary-hsl-500: 71, 73%, 54%;
+
+  --clr-primary-300: hs(var(--cl-primary-hsl-300));
+  --clr-primary-500: hsl(var(--cl-primary-hsl-500));
+
+  --clr-neutral-hsl-100: 204, 43%, 93%;
+  --clr-neutral-hsl-200: 218, 22%, 67%;
+
+  --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
+  --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
+
+  /* font-weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: "Karla", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
