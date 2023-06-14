@@ -1,10 +1,10 @@
 :root {
   /* colors */
   --clr-primary-hsl-300: 179, 62%, 43%;
-  --cl-primary-hsl-500: 71, 73%, 54%;
+  --clr-primary-hsl-500: 71, 73%, 54%;
 
-  --clr-primary-300: hs(var(--cl-primary-hsl-300));
-  --clr-primary-500: hsl(var(--cl-primary-hsl-500));
+  --clr-primary-300: hsl(var(--clr-primary-hsl-300));
+  --clr-primary-500: hsl(var(--clr-primary-hsl-500));
 
   --clr-neutral-hsl-100: 204, 43%, 93%;
   --clr-neutral-hsl-200: 218, 22%, 67%;
@@ -24,7 +24,43 @@
 }
 
 html {
-  font-size: "Karla", sans-serif;
+  font-size: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  padding: 32px;
+  background-color: var(--clr-neutral-100);
+}
+
+main {
+  padding: 24px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  line-height: 1.2em;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.8em;
+}
+
+/* community section */
+.title {
+  font-size: 2rem;
+  color: var(--clr-primary-300);
+}
+
+.community .subtitle {
+  color: var(--clr-primary-500);
+}
+
+.community p {
+  color: hsl(var(--clr-neutral-hsl-200), 0.8);
 }
 
 .attribution {
