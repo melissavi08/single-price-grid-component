@@ -6,9 +6,11 @@
   --clr-primary-300: hsl(var(--clr-primary-hsl-300));
   --clr-primary-500: hsl(var(--clr-primary-hsl-500));
 
+  --clr-neutral-hsl-50: 0, 0%, 100%;
   --clr-neutral-hsl-100: 204, 43%, 93%;
   --clr-neutral-hsl-200: 218, 22%, 67%;
 
+  --clr-neutral-50: hsl(var(--clr-neutral-hsl-50));
   --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
   --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
 
@@ -35,18 +37,18 @@ body {
 
 main {
   border-radius: 8px;
-  background-color: white;
+  background-color: var(--clr-neutral-50);
 }
 
 section {
   padding: 24px 22px;
+  color: var(--clr-neutral-50);
 }
 
 .subtitle {
   margin-bottom: 1.2em;
   font-size: 1.7rem;
   line-height: 1.3em;
-  color: white;
 }
 
 p {
@@ -77,6 +79,32 @@ p {
 /* subscription section */
 .subscription {
   background-color: var(--clr-primary-300);
+}
+
+.price-container {
+  display: flex;
+  gap: 12px;
+  margin: 24px 0px 8px;
+  color: hsl(var(--clr-neutral-hsl-50), 0.5);
+}
+
+.price {
+  font-size: 3.2rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-50);
+}
+
+button {
+  width: 100%;
+  margin-top: 28px;
+  padding: 16px;
+  border-radius: 8px;
+  border-style: none;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  color: white;
+  background-color: var(--clr-primary-500);
 }
 
 .attribution {
