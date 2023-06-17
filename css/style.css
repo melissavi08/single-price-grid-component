@@ -38,6 +38,7 @@ body {
 main {
   border-radius: 8px;
   background-color: var(--clr-neutral-50);
+  overflow: hidden;
 }
 
 section {
@@ -107,6 +108,19 @@ button {
   background-color: var(--clr-primary-500);
 }
 
+/* whyus section */
+.why-us {
+  background-color: hsl(var(--clr-primary-hsl-300), 0.8);
+}
+
+.why-us ul li {
+  font-size: 1.4rem;
+  line-height: 1.4em;
+  color: hsl(var(--clr-neutral-hsl-50), 0.6);
+  list-style: none;
+}
+
+/* footer */
 .attribution {
   font-size: 11px;
   text-align: center;
