@@ -31,17 +31,29 @@ html {
 }
 
 body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   padding: 32px;
   background-color: var(--clr-neutral-100);
 }
 
 main {
-  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 635px;
+  margin: 16px 0px;
+  border-radius: 4px;
   background-color: var(--clr-neutral-50);
   overflow: hidden;
+  box-shadow: 0px 0px 25px -3px hsl(var(--clr-neutral-hsl-200), 0.8);
 }
 
 section {
+  flex: 1 1 270px;
   padding: 24px 22px;
   color: var(--clr-neutral-50);
 }
@@ -53,12 +65,14 @@ section {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.8em;
 }
 
 /* community section */
 .community {
+  flex: 1 1 auto;
+  max-width: 510px;
   padding: 26px 22px 32px;
 }
 
@@ -74,6 +88,7 @@ p {
 }
 
 .community p {
+  font-size: 1.4rem;
   color: hsl(var(--clr-neutral-hsl-200), 0.8);
 }
 
@@ -97,6 +112,7 @@ p {
 
 button {
   width: 100%;
+  max-width: 240px;
   margin-top: 28px;
   padding: 16px;
   border-radius: 8px;
@@ -106,6 +122,16 @@ button {
   font-weight: var(--fw-bold);
   color: white;
   background-color: var(--clr-primary-500);
+  box-shadow: 0px 0px 6px -3px rgba(0, 0, 0, 0.8),
+    inset 0 0 0 0 var(--clr-neutral-50);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 0px 6px -3px rgba(0, 0, 0, 0.8),
+    inset 240px 0 0 0 var(--clr-neutral-50);
+  color: var(--clr-primary-500);
 }
 
 /* whyus section */
@@ -121,11 +147,56 @@ button {
 }
 
 /* footer */
+footer {
+  position: absolute;
+  bottom: 0px;
+  margin: 10px;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  display: inline-block;
+  padding: 0 0.25rem;
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--clr-primary-300);
+  box-shadow: inset 0px 0 0 0 var(--clr-primary-300);
+  transition: all 0.3s ease-in-out;
+}
+
+.attribution a:hover {
+  box-shadow: inset 100px 0 0 0 var(--clr-primary-300);
+  color: var(--clr-neutral-50);
+}
+
+@media screen and (min-width: 672px) {
+  main {
+    border-radius: 8px;
+  }
+
+  section,
+  .community {
+    padding: 40px;
+  }
+
+  .community {
+    max-width: 590px;
+  }
+  .title {
+    margin-bottom: 0.8em;
+    font-size: 2.4rem;
+  }
+
+  .community .subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 0.6em;
+  }
+
+  .community p {
+    font-size: 1.5rem;
+  }
 }
