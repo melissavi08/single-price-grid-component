@@ -6,15 +6,15 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-## Screenshot
+## Screenshots
 
 #### Mobile Screenshot
 
-<img src="./screenshots/mobile-screenshot.jpg" alt="mobile-screenshot" style="width:30%;"/>
+<img src="./images/mobile-screenshot.jpg" alt="mobile-screenshot" style="width:30%;"/>
 
 #### Desktop Screenshot
 
-<img src="./screenshots/desktop-screenshot.jpg" alt="desktop-screenshott" style="width:60%;"/>
+<img src="./images/desktop-screenshot.jpg" alt="desktop-screenshott" style="width:60%;"/>
 
 ## Links
 
